@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Chu's China Bistro — Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" id="home-logo" aria-label="Restaurant home">
+      <span class="brand-mark">餐</span>
+      <span><strong>David Chu's China Bistro</strong><small>FRESH • TASTY • AUTHENTIC</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰ <span>Menu</span></button>
+    <nav id="main-nav">
+      <button data-view="menu">Menu</button>
+      <button data-view="specials">Specials</button>
+      <button data-view="map">Map</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO OUR RESTAURANT</p>
+        <h1>Good food.<br><em>Good mood.</em></h1>
+        <p>Freshly prepared favorites, inspired by classic Chinese cooking.</p>
+        <button class="primary-button" data-view="menu">Explore the menu <span>→</span></button>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a bowl of noodles" role="img">
+        <div class="sun"></div><div class="bowl"><div class="noodles">〰 〰 〰<br>〰 〰 〰</div></div>
+        <span class="chopstick one"></span><span class="chopstick two"></span>
+        <span class="leaf leaf-one">✦</span><span class="leaf leaf-two">✦</span>
+      </div>
+    </section>
+
+    <section class="tiles" id="tiles" aria-label="Restaurant sections">
+      <button class="tile tile-menu" data-view="menu"><span class="tile-icon">🥢</span><strong>Menu</strong><small>Find your new favorite</small><span class="tile-arrow">↗</span></button>
+      <button class="tile tile-specials" data-view="specials"><span class="tile-icon">✨</span><strong>Today's Specials</strong><small>A surprise category, every time</small><span class="tile-arrow">↗</span></button>
+      <button class="tile tile-map" data-view="map"><span class="tile-icon">📍</span><strong>Find Us</strong><small>Come by and say hello</small><span class="tile-arrow">↗</span></button>
+    </section>
+
+    <section class="content-section hidden" id="content" aria-live="polite">
+      <button class="back-button" id="back-home">← Back to home</button>
+      <div id="content-inner"></div>
+    </section>
+  </main>
+
+  <footer><span>餐 David Chu's China Bistro</span><span>Made fresh, served with care.</span><span>© <span id="year"></span> Demo Restaurant</span></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
